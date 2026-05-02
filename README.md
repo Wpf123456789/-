@@ -73,12 +73,6 @@ pnpm build        # 生产构建
 
 ## 核心功能
 
-### 专利生成向导（5 步）
-1. **基础信息** — 发明名称、类型（发明/实用新型/外观设计）、技术领域
-2. **摘要** — 发明摘要撰写与生成
-3. **说明书** — 技术领域、背景技术、发明内容、具体实施方式等章节
-4. **权利要求书** — 独立权利要求 + 从属权利要求层次结构
-5. **预览导出** — Word/PDF 格式导出（带实时预览）
 
 ### AI 模型配置
 - 支持 OpenAI / MiniMax / Anthropic 三种协议
@@ -189,14 +183,7 @@ Polishly/
 
 详细安全修复说明请参阅 [SECURITY_FIXES.md](./SECURITY_FIXES.md)
 
-## 数据库
 
-使用 SQLite（`api/prisma/dev.db`），通过 Prisma ORM 管理：
-
-- `Patent` — 专利主表
-- `Section` — 专利章节表（摘要、说明书各节等）
-- `Template` — 模板表
-- `AiProviderConfig` — AI Provider 配置表（支持加密存储 API Key）
 
 迁移与种子：
 
